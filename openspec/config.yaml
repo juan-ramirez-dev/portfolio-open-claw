@@ -1,0 +1,31 @@
+schema: spec-driven
+
+context: |
+  Tech stack: Next.js 15, React 19, Tailwind CSS 4, TypeScript
+  Architecture: App Router, Server Components, Client Components
+  Testing: Vitest (to be configured)
+  Style: Prettier, ESLint
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+    - Identify affected modules/packages
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include sequence diagrams for complex flows
+    - Document architecture decisions with rationale
+  tasks:
+    - Group tasks by phase (infrastructure, implementation, testing)
+    - Use hierarchical numbering (1.1, 1.2, etc.)
+    - Keep tasks small enough to complete in one session
+  apply:
+    - Follow existing code patterns and conventions
+    - Use React 19 patterns with compiler optimization
+    - Use Tailwind CSS 4 utility classes
+  verify:
+    - Run build to verify no errors
+    - Compare implementation against every spec scenario
+  archive:
+    - Warn before merging destructive deltas
